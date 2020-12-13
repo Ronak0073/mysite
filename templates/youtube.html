@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Dopekid</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      .iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    height: 80%;
+    width: 80%;
+    margin-left: 2%;
+  }
+
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+  <script src="{% static 'js/bootstrap.js'%}"></script>
+  <title>Bootstrap</title>
+</head>
+<body>
+
+    <!-- navigation started -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/">Dopekid</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="http://127.0.0.1:8000/about/">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/platform_youtube">Youtube</a></li>
+            <li><a class="dropdown-item" href="https://github.com/Ronak0073">GitHub</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/dopekid.exe/">Instagram</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blogs</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- nevigation bar closed -->
+
+<div class="shadow-lg p-3 mb-5 bg-white rounded"><center>
+  <p>
+    <h6 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+       Youtube Videos
+    </h6>
+  </p>
+</center></div>
+
+  <!-- THumbnails-->
+  <div class="row g-0 bg-white position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="static/img/goosebumps.jpg" style="border-radius: 10px;" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Goosebumps | Pubg Mobile Montage | 5 Finger + Gyro</h5>
+      <p></p>
+      <a href="https://youtu.be/_4npW7Y6fuk" class="stretched-link">Watch Now</a>
+    </div>
+  </div>
+  
+  <div class="row g-0 bg-white  position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="static/img/godzilla.png" style="border-radius: 10px;" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Eminem - Godzilla | Pubg Mobile Montage</h5>
+      <p></p>
+      <a href="https://youtu.be/vzJTkcpqMl0" class="stretched-link">Watch Now</a>
+    </div>
+  </div>
+  
+  <div class="row g-0 bg-white  position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="static/img/st.jpg" style="border-radius: 10px;" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Pubg Mobile Beat Sync Montage | Stranger Things | TDM Sniper Montage</h5>
+      <p></p>
+      <a href="https://youtu.be/7tsKnjOQ-iY" class="stretched-link">Watch Now</a>
+    </div>
+  </div>
+  
+  <div class="row g-0 bg-white  position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="static/img/trampoline.jpg" style="border-radius: 10px;" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Trampoline ❤️  Pubg Montage</h5>
+      <p></p>
+      <a href="https://youtu.be/uYWXXIa4Kds" class="stretched-link">Watch Now</a>
+    </div>
+  </div>
+<br>
+  <center><a href="https://www.youtube.com/channel/UCCYWSVuEMel2sHP-6tt4nTg?view_as=subscriber" class="btn btn-primary btn-lg enabled" tabindex="-1" role="button" aria-expanded="true">Subscribe Now </a></center>
+<br>
+
+<!-- dont modify below -->
+</body>
+</html>

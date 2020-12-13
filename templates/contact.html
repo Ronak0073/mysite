@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+  <script src="{% static 'js/bootstrap.js'%}"></script>
+  <title>Dopekid.com</title>
+</head>
+<body>
+  <!-- nevegation  -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/">Dopekid</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="http://127.0.0.1:8000/about/">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            More 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/platform_youtube">Youtube</a></li>
+            <li><a class="dropdown-item" href="https://github.com/Ronak0073">GitHub</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/dopekid.exe/">Instagram</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blogs</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!
+<!-- Navigation end -->
+
+<!-- status -->
+<div class="alert alert-warning" role="alert">
+  Login to Send Message
+</div>
+
+
+
+<!--Section: Contact v.2-->
+<section class="mr-4">
+
+    <!--Section heading-->
+    <center>
+    <div class="shadow-sm p-3 mb-5 bg-white rounded"><h2>Contact Us</h2></div>
+  </center>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mr-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 ml-5">
+            <form id="contact" name="contact" action="contact" method="POST"> {% csrf_token %}
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form ml-5">
+                            <input type="text" id="name" name="formname" class="form-control">
+                            <label for="name" class=""><h6>Your Name</h6></label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="formemail" class="form-control">
+                            <label for="email" class=""><h6>Your Email</h6></label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="formsubject" class="form-control">
+                            <label for="subject" class=""><h6>Subjext</h6></label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="formmessage" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message"><h6>Message</h6></label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+              <center>
+                <a class="btn btn-primary" onclick="document.getElementById('contact').submit();"><h6>Send</h6></a>
+              </center>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>India, Earth, Milky Way Galaxy</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+91 99 88 77 3456</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p><h5>mailronakajha@gmail.com</h5></p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+<!-- Status -->
+<div class="alert alert-light" role="alert">
+  {{ sent }}
+</div>
+
+
+<!--dont modify below-->
+</body>
+</html>
